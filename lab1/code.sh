@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # 1.Create a directory 'CSE', change your working directory to ‘CSE’ and display where you
 # are working now? Create files named 'date' and 'user'. Store the calendar and current date
 # information in the file named 'date'. Store the login details of user in the file 'user'. 
@@ -66,7 +68,18 @@ sort -n -k3 marks.txt -o marks_sorted.txt
 touch NameList
 touch MarkList
 touch Student
+echo "Alice, Bob, Charlie, David" > NameList
+echo "80, 90, 85, 95" > MarkList
+paste NameList MarkList > Student
+cat Student
 
+# 7.List all the files recursively in a directory. 
+ls -R
+
+# 8.Display the tenth line of the file 'NameList.txt'.
+head -n 10 NameList.txt | tail -n 1
+
+# 9.Count the number of lines, words and Characters in the 'NameList.txt' file
 
 
 
