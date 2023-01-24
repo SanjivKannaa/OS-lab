@@ -80,8 +80,39 @@ ls -R
 head -n 10 NameList.txt | tail -n 1
 
 # 9.Count the number of lines, words and Characters in the 'NameList.txt' file
+touch NameList.txt
+echo "hey i am bored" > NameList.txt
+lines=$(wc -l < "NameList.txt")
+words=$(wc -w < "NameList.txt")
+characters=$(wc -c < "NameList.txt")
+echo "Lines: $lines Words: $words Characters: $characters"
+
+# 10.Display the count of the number of lines having the word "Programming" in the file
+# Python.txt using only the 'grep' command. 
 
 
+
+# 11.Display all the lines which do not contain the word "Programming" in Python.txt using
+# only the 'grep' command.
+
+
+
+# 12.Change the permission of the file 'NameList.txt', so that all the users, group and others can
+# only read and write it.
+
+
+
+# 13.Display all the files in the ‘CSE’ directory according to their size (ascending order), using
+# only the ‘ls’ command.
+
+
+
+# 14.List all those files whose filename has only one character or number as its name (example:
+# filenames like 3.txt, g.txt, h.txt).
+
+
+
+# 15.Illustrate the difference between diff and cmp commands using an Example.
 
 # 16. Write C programs to simulate the following commands in Unix Operating system.
 # • head
