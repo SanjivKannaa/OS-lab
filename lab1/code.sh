@@ -51,7 +51,8 @@ echo "78 97 60" >> marks.txt
 echo "67 68 69" >> marks.txt
 touch marks_numbered.txt
 nl marks.txt > marks_numbered.txt
-sed -i 's/^[0-9]\+\s\+/&:/' marks_numbered.txt
+# sed -i 's/^[0-9]\+\s\+/&:/' marks_numbered.txt
+
 
 
 # 5.Sort the file marks.txt based on the third column. 
@@ -106,6 +107,7 @@ sudo chmod 666 NameList.txt
 
 # 13.Display all the files in the ‘CSE’ directory according to their size (ascending order), using
 # only the ‘ls’ command.
+ls -S CSE/
 
 
 
@@ -115,6 +117,8 @@ sudo chmod 666 NameList.txt
 
 
 # 15.Illustrate the difference between diff and cmp commands using an Example.
+
+
 
 # 16. Write C programs to simulate the following commands in Unix Operating system.
 # • head
