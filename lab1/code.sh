@@ -99,7 +99,9 @@ echo "Lines: $lines Words: $words Characters: $characters"
 
 # 12.Change the permission of the file 'NameList.txt', so that all the users, group and others can
 # only read and write it.
-
+touch NameList.txt
+echo "Hi!" > NameList.txt
+sudo chmod 666 NameList.txt
 
 
 # 13.Display all the files in the ‘CSE’ directory according to their size (ascending order), using
