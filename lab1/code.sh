@@ -26,7 +26,7 @@ echo "Nepal" >> asia
 echo "Thailand" >> asia
 echo "Netherland" >> europe
 echo "Germany" >> europe
-cat asia
+# cat asia
 sort asia | tr '[:upper:]' '[:lower:]'
 
 
@@ -51,7 +51,6 @@ echo "78 97 60" >> marks.txt
 echo "67 68 69" >> marks.txt
 touch marks_numbered.txt
 nl marks.txt > marks_numbered.txt
-# sed -i 's/^[0-9]\+\s\+/&:/' marks_numbered.txt
 
 
 
@@ -113,12 +112,21 @@ ls -S CSE/
 
 # 14.List all those files whose filename has only one character or number as its name (example:
 # filenames like 3.txt, g.txt, h.txt).
-
-
+ls | grep '.'
 
 # 15.Illustrate the difference between diff and cmp commands using an Example.
-
-
+touch file1
+echo "line 1" > file1
+echo "line 2" >> file1
+echo "line 3" >> file1
+touch file 2
+echo "line 1" > file2
+echo "line 2 lol" >> file2
+echo "line 3" >> file2
+diff file1 file2
+cmp file1 file2
+# diff shows the differences
+# cmp shows the line numeber in which the difference exists
 
 # 16. Write C programs to simulate the following commands in Unix Operating system.
 # • head
