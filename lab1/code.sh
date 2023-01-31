@@ -36,13 +36,13 @@ touch oldstu.txt newstu.txt oldlab.txt newlab.pdf
 touch .stu .oldfiles
 ls -la | grep "stu\|old"
 
+
 # 4.Create a file maks_numbered.txt using the file marks.txt. The new file should like
 #           1:89 92 85
 #           2:98 47 67
 #           3:67 82 76
 #           4:78 97 60
 #           5:67 68 69
-
 touch marks.txt
 echo "89 92 85" >> marks.txt
 echo "98 47 67" >> marks.txt
