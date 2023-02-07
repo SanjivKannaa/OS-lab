@@ -6,9 +6,9 @@ n=0
 ans=1
 read -p "X = " x
 read -p "n = " n
-for i in $(seq 1 n)
+for i in $(seq 1 $n)
 do
-    ans=$((ans*x))
+    ans=$((ans*x)) # has errors
 done
 echo "x^n = $(ans)"
 
@@ -21,6 +21,7 @@ do
     sum=$((sum+value))
 done
 echo "The sum is $sum"
+echo "The average is $((sum/10))"
 
 
 # 3. Write a shell script to find whether the given number is Armstrong or not
