@@ -89,11 +89,12 @@ echo "Lines: $lines Words: $words Characters: $characters"
 
 # 10.Display the count of the number of lines having the word "Programming" in the file
 # Python.txt using only the 'grep' command. 
-
+cat namelist| grep programming
 
 
 # 11.Display all the lines which do not contain the word "Programming" in Python.txt using
 # only the 'grep' command.
+cat namelist| grep programming -v | wc -l
 
 
 

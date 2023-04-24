@@ -1,5 +1,0 @@
-1. write a shell script to count the occurances of a particular character in a string
-2. write a shell script to list files as per their size and print the second fielf in he file using awk command
-3. write a shell script to read a username andto find whether the usre is loggedin or not
-4. write a shell script that accepts an alphabet from the user and displays the filename starting with the alphabet in the current working directory
-5. write a shell script to find whether the file has execute permission or not
