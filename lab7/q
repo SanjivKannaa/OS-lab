@@ -1,0 +1,10 @@
+consider the following 4 jobs
+
+job 	arrival 	burst
+1	0	7
+2	1	4
+3	3	9
+4	4	5
+shortest remaining time first
+
+
